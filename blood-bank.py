@@ -1,4 +1,5 @@
-import PySimpleGUI as sg    #import that PySimpleGUI library to show a UI 
+import PySimpleGUI as sg    #import of PySimpleGUI to python
+                            #that will show a UI 
 
 def insertionSort(A):            #sort that will be used 
     arr = [str(x) for x in A]    
@@ -37,7 +38,7 @@ layout = [[sg.TabGroup([[sg.Tab('A', blood_A), sg.Tab('AB', blood_AB), sg.Tab('B
                          sg.Tab('O', blood_O)]])],
            [sg.InputText(key='BLOOD_TYPE'), sg.InputText(key='INPUT')],
           [sg.Button('Submit')],[sg.Button('Cancel')]]
-#declaration of window's name
+#declaration of window name
 window = sg.Window('Blood Bank', layout)    
 
 
